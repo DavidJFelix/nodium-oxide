@@ -1,0 +1,19 @@
+[package]
+name = "nodium-oxide"
+version = "0.1.0"
+authors = ["David J. Felix <felix.davidj@gmail.com>"]
+license = "MIT"
+build = "build.rs"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "nodium_oxide"
+crate-type = ["dylib"]
+
+[build-dependencies]
+neon-build = "0.2.0"
+
+[dependencies]
+neon = "0.2.0"
+sodiumoxide = "0.2.1"
+
